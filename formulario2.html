@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario2.css">
+    <script src="https://kit.fontawesome.com/c37017f967.js" crossorigin="anonymous"></script>
+    <title>Vinoteca Tato - Formulario</title>
+</head>
+<body class="contenedor">
+        <nav class="nav">
+            <!-- <a href="contacto.html" style="color: ghostwhite">  <button class="boton">Registrarse</button> </a> -->
+            <a href="nota.html" style="color: ghostwhite">  <button class="boton">Nota</button> </a>
+            <a href="index.html" style="color: ghostwhite">  <button class="boton">Home</button> </a>
+            <a href="nota2.html" style="color: ghostwhite">  <button class="boton">Torrontés</button> </a>
+        </nav>
+        <header class="header">
+           <h1><i class="fas fa-wine-glass-alt"></i> Vinoteca Tato <i class="fas fa-wine-glass-alt"></i></h1>
+           <br>
+           <h2>La calidad de nuestra materia prima, marca la diferencia.</h2>
+        </header>
+        <form class="contenedorForm" name="formulario" method="post" action="">
+            <fieldset class="formulario" id="formulario">
+                <span>Datos Personales</span>
+                <label>Nombre:
+                    <p><input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre"></p>
+                </label>
+                <label>Edad:
+                    <p><input type="number" name="edad" placeholder="Ingrese su edad" id="edad"></p>
+                </label>
+                <label>Mail:
+                    <p><input type="email" name="mail" placeholder="Ingrese su Mail" id="mail" required></p>
+                </label>
+                <label>Contraseña:
+                    <p><input type="password" name="password" placeholder="Ingrese clave mayor a 8 caracteres" id="password"></p>
+                </label>
+                    <input class="boton2" type="submit" value="Enviar"> 
+            </fieldset>  
+        </form>
+        <aside class="aside derecha">
+            <h1>Un poco de nuestra historia...</h1>
+            <!-- <br> -->
+            <p>“Labor y perseverancia” fue el lema que guió a Felipe Rutini desde el comienzo y que marcó a fuego el devenir de sus vinos hasta convertirlos en sinónimo de la más alta calidad. Siguiendo su espíritu innovador, hacia 1925 la bodega comienza a plantar viñedos en el Valle de Uco. A partir de esas plantaciones pioneras la región se ha ido consolidando como uno de los principales centros vitivinícolas de Mendoza... <a href="index.html">Leer mas</a></p>
+            <!-- <br> -->
+            <!-- <p> Durante la década del 90 las instalaciones originales de La Rural en Coquimbito son renovadas completamente, incorporando tecnología de punta a la estructura que funcionaba desde el siglo XIX. En ese mismo predio se encuentra... </p> -->
+            <!-- <br> -->
+            <h1>La mágia del Torrontes</h1>
+            <!-- <br> -->
+            <p>Por su frescura y equilibrio, la variedad Torrontés fue históricamente una de las más consumidas de la Argentina. Sin embargo, hasta hace un tiempo no se sabía con certeza de dónde había salido esa uva con tanto carácter y personalidad... <a href="nota2.html">Leer mas</a> </p>
+            <!-- <br> -->
+            <!-- <p>Su proceso de identificación fue complejo, ya que al principio convivió mezclada con otros varietales de forma indiferenciada. Asimismo, desde el punto de vista científico, esta cepa no tenía nombre ni descripción ampelográfica (clasificación de las vides); es decir, que no había rastros</p> -->
+            <h1>¿Cuál es la diferencia entre un Sommelier y un Enólogo?</h1>
+            <!-- <br> -->
+            <p>Comencemos entonces por el Sommelier. Según la definición de la Asociación Argentina de Sommeliers “es la persona que por sus estudios, conocimientos y experiencia es especialista en bebidas, incluyendo aguas, infusiones, destilados y licores, pero por sobre todo, vinos. Actualmente, el Sommelier puede tener a cargo la selección y servicio de bebidas en un restaurante, o bien realizar catas, degustaciones y presentaciones en distintos ámbitos, además de ser crítico de vinos, escritor, educador y consultor... <a href="nota.html">Leer mas</a> </p>
+        </aside>
+        <footer class="footer">
+            <h2><i class="fas fa-wine-glass-alt"></i> Derechos Reservados <i class="fas fa-wine-glass-alt"></i></h2>
+        </footer>
+        <script src="validacion.js"></script>
+</body>
+</html>

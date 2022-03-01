@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.contenedor {
+    background-color: #e9ecf4;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 2px; 
+    width:100%;
+    /* max-width: 1000px; */
+    /* margin: 20px auto; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.header, .article, .izquierda, .derecha, .footer, .nav{
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 10px;
+    /* border-radius: 10px; */
+}
+p{
+    text-align: justify;
+    margin: 25px 30px;
+}
+.nav {
+    text-align: center;
+    background-color: #b3c3ec;
+    padding: 20px;
+}
+.boton{
+    color:white;
+    background-color: #3b0394;
+    border-radius: 15px;
+    width: 100px;
+    height: 25px;
+}
+
+.header{
+    background-color: #3b0394;
+    color: white;
+    height: 150px;
+    text-align: center;
+    
+}
+h1{
+    font-family: "Montserrat"
+}
+.article{
+    background-color: #b3c3ec;
+    padding: 25px;
+}
+.izquierda{
+    background-color: #dfe7ff;
+    width: 100px;
+    padding: 25px;
+}
+
+.footer{
+    background-color: #3b0394;
+    color: white;
+    height: 100px;
+}
+
+@media all and (min-width:600px){
+    .aside{flex: 1 1 auto;}
+}
+
+@media all and (min-width:800px){
+    .article{flex: 2 0;}
+    .izquierda{order: 1;}
+    .article{order: 2;}
+    .footer{order: 3;}
+}

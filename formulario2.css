@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.contenedor {
+    background-color: #e9ecf4;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 2px; 
+    width:100%;
+    /* max-width: 1000px; */
+    /* margin: 20px auto; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+
+.header, .article, .izquierda, .derecha, .footer, .nav{
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 10px;
+    /* border-radius: 10px; */
+}
+
+.nav {
+    text-align: center;
+    background-color: #b3c3ec;
+    padding: 20px;
+}
+.boton{
+    color:white;
+    background-color: #3b0394;
+    border-radius: 15px;
+    width: 100px;
+    height: 25px;
+}
+
+.header{
+    background-color: #3b0394;
+    color: white;
+    height: 150px;
+    text-align: center;
+    
+}
+p{
+    text-align: justify;
+    margin: 25px 30px;
+}
+.contenedorForm{
+    background-color: white;
+    border-radius: 15px;
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    display: flex;
+    margin: 30px;
+    max-height: 500px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "montserrat";
+}
+/* formulario de contacto */
+.formulario {
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 2px;
+    padding: 10px;
+    box-shadow: -16px 7px 16px 1px rgba(161, 65, 240, 0.75);
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.boton2 {
+    color:white;
+    background-color: #3b0394;
+    border-radius: 15px;
+    width: 100px;
+    height: 25px;
+}
+h1{
+    font-family: "Montserrat"
+}
+.article{
+    background-color: #b3c3ec;
+    padding: 25px;
+}
+.derecha{
+    background-color: #dfe7ff;
+    width: 100px;
+    padding: 25px;
+}
+
+.footer{
+    background-color: #3b0394;
+    color: white;
+    height: 100px;
+}
+
+@media all and (min-width:600px){
+    .aside{flex: 1 1 auto;}
+}
+
+@media all and (min-width:800px){
+    .article{flex: 2 0;}
+    .izquierda{order: 1;}
+    .article{order: 2;}
+    .footer{order: 3;}
+}
+
+@keyframes animacion {
+    0%   {background-color:white;}
+    25%  {background-color: rgb(172, 171, 238)}
+    50%  {background-color: rgb(172, 171, 238)}
+    100% {background-color: white;}
+  }
+  
